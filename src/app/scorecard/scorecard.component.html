@@ -1,0 +1,10 @@
+<div class="wrapper">
+  <h2>Scorecard</h2>
+  <div class="scorecard">
+    <div *ngFor="let frame of frames; let i = index">
+      <app-framecard *ngIf="i < 9" [frame]="frame"></app-framecard>
+    </div>
+
+    <app-final-framecard [frame]="finalFrame"></app-final-framecard>
+  </div>
+</div>

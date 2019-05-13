@@ -1,0 +1,9 @@
+<section class="wrapper">
+  <h2>Pins this roll</h2>
+  <button
+    *ngFor="let item of Arr(pins + 1).fill(1); let i = index"
+    (click)="roll(i)"
+  >
+    {{ i }}
+  </button>
+</section>

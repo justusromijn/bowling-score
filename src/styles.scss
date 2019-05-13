@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+@import './variables';
+body,
+html {
+  background: $background-dark;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h1 {
+  font-family: 'Monoton', sans-serif;
+  color: $color-light;
+  font-size: 3rem;
+}
+
+h2 {
+  color: $color-light;
+  font-size: 1.5rem;
+}
+
+button {
+  border-radius: 5px;
+  border: 0;
+  background: $background-medium;
+  color: $color-light;
+  font-family: 'Press Start 2P', monospace;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  padding: 20px 10px;
+}
